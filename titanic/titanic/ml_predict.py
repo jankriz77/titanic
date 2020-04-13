@@ -6,6 +6,6 @@ def prediction_model(pclass, sex, age, sibsp, parch, fare, embarked, title):
     prediction = randomforest.predict(x)
     if prediction == 0:
         return "Na základě zadaných dat by osoba nejspíš NEPŘEŽILA."
-    elif PREDICTION == 1:
+    elif prediction == 1:
         return "Na základě zadaných dat by osoba nejspíš PŘEŽILA."
     return prediction
